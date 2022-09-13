@@ -46,7 +46,7 @@ struct ContentView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: width, height: height)
-                    .rotation3DEffect(.degrees(pitch * 28), axis: (x: 1, y: 1 , z: 0))
+                    .rotation3DEffect(.degrees(pitch * 28 + dragLocation.x), axis: (x: 1, y: 1 , z: 0))
     //.offset(x: CGFloat(-yaw * 5), y: CGFloat(-pitch * 5))
     .animation(.linear(duration: 0.2), value: pitch)
     .onAppear {
@@ -56,7 +56,7 @@ struct ContentView: View {
             pitch = motionData!.attitude.roll
         }
     }
-                    .gesture(
+    .gesture(
                         DragGesture(minimumDistance: 0.0)
                             .onChanged { gesture in
                                 let normalizedX = scale(inputMin: 0, inputMax: width, outputMin: -intensity, outputMax: intensity, value: gesture.location.x)
