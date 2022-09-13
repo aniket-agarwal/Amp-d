@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184CBAAF28D13777009A13BD /* ListeningActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184CBAAE28D13777009A13BD /* ListeningActivityView.swift */; };
 		18C695EB28BF21D30039E044 /* Amp_dApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C695EA28BF21D30039E044 /* Amp_dApp.swift */; };
 		18C695ED28BF21D30039E044 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C695EC28BF21D30039E044 /* ContentView.swift */; };
 		18C695EF28BF21D50039E044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C695EE28BF21D50039E044 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		184CBAAE28D13777009A13BD /* ListeningActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningActivityView.swift; sourceTree = "<group>"; };
 		18C695E728BF21D30039E044 /* Amp'd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amp'd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C695EA28BF21D30039E044 /* Amp_dApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amp_dApp.swift; sourceTree = "<group>"; };
 		18C695EC28BF21D30039E044 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				18C695EA28BF21D30039E044 /* Amp_dApp.swift */,
 				18C695EC28BF21D30039E044 /* ContentView.swift */,
+				184CBAAE28D13777009A13BD /* ListeningActivityView.swift */,
 				18C695EE28BF21D50039E044 /* Assets.xcassets */,
 				18C695F028BF21D50039E044 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184CBAAF28D13777009A13BD /* ListeningActivityView.swift in Sources */,
 				18C695ED28BF21D30039E044 /* ContentView.swift in Sources */,
 				18C695EB28BF21D30039E044 /* Amp_dApp.swift in Sources */,
 			);
