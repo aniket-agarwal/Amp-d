@@ -12,16 +12,20 @@ struct ListeningActivityView: View {
         ZStack {
             Color("BG")
                 .ignoresSafeArea()
+            VStack(alignment: .leading) {
+                Text("Listening Activity")
+                    .font(.system(.title, design: .default))
+                    .fontWeight(.bold)
+                    .foregroundColor(.indigo)
+                    .padding(.top)
+                
             ScrollView {
-                VStack(alignment: .leading) {
-                    Text("Listening Activity")
-                        .font(.system(.title, design: .default))
-                        .fontWeight(.bold)
-                        .foregroundColor(.indigo)
                     ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-                        UserActivityCard(avatar: "Avatar", UserName: "Joe King", AlbumArt: "Art", SongName: "Entropy", ArtistName: "Beach Bunny")
+                        UserActivityCard(avatar: "Avatar", UserName: "Joe King", AlbumArt: "Art", SongName: "Entropy", ArtistName: "Beach Bunny").padding(.bottom, 4)
                     }
+                    .padding(.bottom, 32)
                 }
+            
             }
         }
     }
