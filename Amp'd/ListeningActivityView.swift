@@ -19,7 +19,7 @@ struct ListeningActivityView: View {
                     .foregroundColor(.indigo)
                     .padding(.top)
                 
-            ScrollView {
+                ScrollView (showsIndicators: false) {
                     ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
                         UserActivityCard(avatar: "Avatar", UserName: "Joe King", AlbumArt: "Art", SongName: "Entropy", ArtistName: "Beach Bunny").padding(.bottom, 4)
                     }
@@ -110,7 +110,7 @@ struct UserActivityCard : View {
         }
         .padding(16)
         .frame(width: 358)
-        .background(Color.white)
+        .background(Color("CardBG"))
         .overlay(RoundedRectangle(cornerRadius: 8, style: .continuous).stroke(Color.black.opacity(0.2), lineWidth: 1))
         .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
     }

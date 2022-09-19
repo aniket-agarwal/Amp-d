@@ -21,7 +21,11 @@ struct HomeView: View {
                 .tag(1)
                 
             }
-            .tint(.indigo)
+            .onAppear {
+                let tabBarAppearance = UITabBarAppearance()
+                tabBarAppearance.configureWithDefaultBackground()
+                UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+            }
     }
 }
 
